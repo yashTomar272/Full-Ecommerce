@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import img1 from "./img/fas1.png";
 import img2 from "./img/fas2.png";
 import img3 from "./img/fas3.png";
+import img4 from "./img/fas44.png";
 import { Navigate, useNavigate } from "react-router-dom";
 
 export default function Sliderpage() {
@@ -64,7 +65,7 @@ function SlideMain({ indx }) {
       description:
         "Enjoy massive savings on holiday essentials. Shop now and make the most of our special offers.",
       buttonText: "Start Shopping",
-      image: "fas44.png",
+      image: img4,
     },
   ];
   const navigate=useNavigate();

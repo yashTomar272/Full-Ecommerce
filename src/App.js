@@ -40,7 +40,8 @@ const App = () => {
     <FirebaseProvider>
       <Router>
         <Routes>
-          <Route path="/" element={showWelcomePage ? <WelcomePage />: <Homepage/>} />
+          <Route path="/full-ecommerce" element={showWelcomePage ? <WelcomePage />: <Homepage/>} />
+          <Route path="/" element={ <Homepage/>} />
           <Route path="/*" element={<Nopage />} />
           <Route path="/ProductInfo/:id" element={<ProductInfo />} />
           <Route path="/CartPage" element={<CartPage />} />

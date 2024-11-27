@@ -9,7 +9,7 @@ import OrderDetail from "./OrderDetail";
 import AnalyticI from "./AnalyticI";
 import AnalyticII from "./AnalyticII";
 import AnalyticIII from "./AnalyticIII";
-
+import photo from './img/2.jpg'
 import { useFirebase } from "./Firebase";
 
 export default function AdminDashboard() {
@@ -61,7 +61,7 @@ export default function AdminDashboard() {
             >
               {" "}
               <img
-                src="2.jpg"
+                src={photo}
                 alt="User_img"
                 style={{ width: "90px", aspectRatio: "1", borderRadius: "50%" }}
               />

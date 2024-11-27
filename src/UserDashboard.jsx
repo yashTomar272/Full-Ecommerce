@@ -1,7 +1,7 @@
 import Layout from './Layout';
 import { useFirebase } from "./Firebase";
 import React, { useState, useEffect } from "react";
-
+import photo from './img/2.jpg'
 import { MdCurrencyRupee } from "react-icons/md";
 
 // import { useNavigate } from "react-router-dom";
@@ -28,7 +28,7 @@ export default function UserDashboard(){
     <div className=" Main_user w-100   h-100 bg-light">
       <div className="container d-flex alig py-5 dalju flex-column gap-4">
     <div className='User_First bg- w-100  d-flex align-items-center justify-content-center p-3 flex-column ' style={{borderRadius:"10px",background:"#ffd6d6"}}>
-     <div className='dalju' style={{width:"90px",aspectRatio:"1",borderRadius:"50%",border:"1px solid #737373"}}> <img src="2.jpg" alt='User_img'  style={{width:"90px",aspectRatio:"1",borderRadius:"50%"}}/></div>
+     <div className='dalju' style={{width:"90px",aspectRatio:"1",borderRadius:"50%",border:"1px solid #737373"}}> <img src={photo} alt='User_img'  style={{width:"90px",aspectRatio:"1",borderRadius:"50%"}}/></div>
      <div className='d-flex gap-2'> <h6>Name :</h6><span>{user?.username}</span></div>
      <div className='d-flex gap-2'> <h6>Email :</h6>{user?.email}</div>
        <div className='d-flex gap-2'> <h6>Date :</h6>{user?.date}</div>

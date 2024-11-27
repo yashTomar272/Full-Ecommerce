@@ -67,6 +67,8 @@
 //   };
 
 import React, { useState, useEffect } from "react";
+import google from './img/google.png'
+import loginn from './img/login1.png'
 import { useFirebase } from "./Firebase";
 import { PiEyeLight, PiEyeSlash } from "react-icons/pi";
 import { useNavigate } from "react-router-dom";
@@ -172,7 +174,7 @@ export default function Loginpage() {
               Secure and seamless ligin experience for Buy Smart users...
             </p>
             <img
-              src="login1.png"
+              src={loginn}
               className="img-fluid position-absolute"
               style={{ bottom: "0px" }}
             />
@@ -302,6 +304,7 @@ export default function Loginpage() {
                 {errorMsg}
               </span>
             )}
+            
             <button type="submit" className="btnnn">
               {newUser ? "Sign Up" : "Log In"}
             </button>
@@ -337,7 +340,7 @@ export default function Loginpage() {
             }}
             className="dalju  "
           >
-            <img src="google.png" alt="google_img" style={{ width: "19px" }} />
+            <img src={google} alt="google_img" style={{ width: "19px" }} />
             <h6 className="p-0 m-0">Google</h6>
           </button>
           {newUser ? (
